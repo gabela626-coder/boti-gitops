@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bot-hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bot-hello
+  template:
+    metadata:
+      labels:
+        app: bot-hello
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/gabela626-coder/bot-hello:7447b323
+          ports:
+            - containerPort: 8080
