@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/gabela626-coder/bot-hello:7447b323
+          image: ghcr.io/gabela626-coder/bot-hello:9f258bfe
           ports:
             - containerPort: 8080
