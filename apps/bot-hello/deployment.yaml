@@ -13,10 +13,8 @@ spec:
         app: bot-hello
     spec:
       containers:
-        - name: web
-          image: ghcr.io/gabela626-coder/bot-hello:9f258bfe
-          ports:
-            - containerPort: 8080
+        - name: bot
+          image: ghcr.io/gabela626-coder/bot-hello:b4867f13
           envFrom:
             - secretRef:
                 name: bot-hello-secret
