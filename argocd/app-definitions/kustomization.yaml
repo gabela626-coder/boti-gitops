@@ -5,3 +5,4 @@ resources:
   - hello-app.yaml
   - infra-namespace.yaml
   - root-app.yaml
+  - bot-demo.yaml
