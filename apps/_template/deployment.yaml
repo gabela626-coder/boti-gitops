@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: BOT_NAME
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: BOT_NAME
+  template:
+    metadata:
+      labels:
+        app: BOT_NAME
+    spec:
+      containers:
+        - name: bot
+          image: ghcr.io/gabela626-coder/BOT_NAME:CHANGE_ME
+          envFrom:
+            - secretRef:
+                name: BOT_NAME-secret
