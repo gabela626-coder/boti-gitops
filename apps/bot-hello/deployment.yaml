@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: bot
-          image: ghcr.io/gabela626-coder/bot-hello:ec2a19ac
+          image: ghcr.io/gabela626-coder/bot-hello:89afe797
           envFrom:
             - secretRef:
                 name: bot-hello-secret
